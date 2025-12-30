@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WRAITH — a gothic neon strip club in Shirogane. Drift through fog, silk, and shadow with the Silken Shades.">
+  <title>WRAITH | Gothic Neon Strip Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="gate-locked">
+  <div class="age-gate" id="age-gate">
+    <div class="age-gate-panel glass">
+      <div class="badge">18+ Only</div>
+      <h2>Enter the shadows?</h2>
+      <p>WRAITH is an 18+ venue. By entering you confirm you are of legal age.</p>
+      <div class="age-gate-actions">
+        <button class="pill-button primary" data-age-accept>Yes, enter</button>
+        <button class="pill-button ghost" data-age-decline>No, take me back</button>
+      </div>
+    </div>
+  </div>
+
+  <video id="wraith-fog" class="wraith-fog" autoplay muted loop playsinline>
+    <source src="https://raw.githubusercontent.com/KieraVirelle/KieraVirelle/main/Video/FOG.mp4" type="video/mp4">
+  </video>
+  <div class="fog-overlay"></div>
+  <div class="entry-haze"></div>
+  <div class="spotlight"></div>
+  <div class="floor-reflection"></div>
+
+  <header class="site-header">
+    <div id="scroll-progress"></div>
+    <nav class="nav"></nav>
+  </header>
+
+  <main>
+    <section class="neon-banner">
+      <div class="banner-inner glass">
+        <h1 class="neon-heading">Welcome to WRAITH</h1>
+        <div class="banner-line"></div>
+      </div>
+    </section>
+
+    <section class="nav-highlight glass">
+      <div class="nav-pills">
+        <a class="nav-pill" href="index.html">Home</a>
+        <a class="nav-pill" href="menu.html">Menu</a>
+        <a class="nav-pill" href="vip.html">VIP</a>
+        <a class="nav-pill" href="staff.html">Staff</a>
+        <a class="nav-pill" href="https://discord.gg/MeAdC25p9V" target="_blank" rel="noopener">Discord</a>
+      </div>
+    </section>
+
+    <section id="home" class="panel story glass">
+      <div class="section-head">
+        <p class="eyebrow">Lore</p>
+        <h2>Shadows by the Sea</h2>
+        <p class="section-lede">
+          Nestled along the moonlit shores of Shirogane, WRAITH lives in deep purples and shadowed blacks — half dream, half haunting.
+        </p>
+      </div>
+      <div class="grid two">
+        <div class="copy">
+          <p>
+            WRAITH is home to the <span class="neon">Silken Shades</span>, ethereal dancers moving like living shadows beneath incense and dim light. Wrapped in silk and secrecy, each Shade is soft, dangerous, and impossibly alluring.
+          </p>
+          <p>
+            Sink into shadow, surrender to temptation, and let the night claim you.
+          </p>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <p class="label">Location</p>
+            <p class="value">Dynamis — Rafflesia</p>
+            <p class="meta">Shirogane, Ward 7, Plot 31</p>
+          </div>
+          <div class="info-card">
+            <p class="label">Open Hours</p>
+            <p class="value">Fridays</p>
+            <p class="meta">11PM — 3AM EST</p>
+          </div>
+          <div class="info-card">
+            <p class="label">Find Us</p>
+            <p class="value">Discord</p>
+            <a class="text-link" href="https://discord.gg/MeAdC25p9V" target="_blank" rel="noopener">Join the server</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-actions">
+      <a class="text-link" href="#home">Back to top</a>
+      <a class="text-link" href="https://discord.gg/MeAdC25p9V" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
