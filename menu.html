@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WRAITH Menu � signature gothic neon cocktails and specialty drinks.">
+  <meta name="description" content="WRAITH Menu � signature gothic neon cocktails and specialty drinks.">
   <title>WRAITH | Menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +33,15 @@
 
   <header class="site-header">
     <div id="scroll-progress"></div>
+    <div class="brand-lockup">
+      <div class="brand-logo">
+        <img src="assets/wraith-logo.png" alt="WRAITH crest" loading="lazy">
+      </div>
+      <div class="brand">
+        <span class="brand-mark">WRAITH</span>
+        <span class="brand-tag">Silken Shades</span>
+      </div>
+    </div>
     <nav class="nav"></nav>
   </header>
 
@@ -48,56 +57,73 @@
     </section>
 
     <section class="panel glass">
-      <div class="section-head">
+      <div class="section-head menu-hero">
         <p class="eyebrow">Signature Drinks</p>
         <h2>Menu</h2>
         <p class="section-lede">
           Sip through fog and neon. Each pour is tailored for the night.
         </p>
       </div>
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://i.imgur.com/c0tpcFC.png');"></div>
-          <div class="card-body">
-            <h3>Red Bliss</h3>
-            <p class="price">12?</p>
-            <p class="blurb">Sweet berry, mint, and a crimson glow that lingers.</p>
+      <div class="menu-grid classic-grid">
+        <article class="card menu-card menu-tappable" data-menu-card data-title="The Raven" data-mood="Black vodka, coffee liqueur, black sambuca, dark cocoa bitters, sugar rim, isomalt feather." data-blurb="A raven roosts on the rim -- ink-dark feathers and bright knowing eyes. Each slow sip is another line of its whispered tale." data-img="images/The Raven.jpeg" data-img-pos="62%">
+          <div class="card-img" style="background-position: center 62%; background-image: linear-gradient(140deg, rgba(0,0,0,0.35), rgba(8,4,15,0.65)), url('images/The Raven.jpeg');"></div>
+          <div class="card-body compact">
+            <h3>The Raven</h3>
           </div>
         </article>
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://i.imgur.com/c0tpcFC.png');"></div>
-          <div class="card-body">
-            <h3>Crimson Reverie</h3>
-            <p class="price">11?</p>
-            <p class="blurb">Deep spice, dark fruit, and a velvet finish.</p>
+
+        <article class="card menu-card menu-tappable" data-menu-card data-title="Aqua Tofana" data-mood="Gin, elderflower liqueur, green absinthe, syrup, lime, ice, edible silver." data-blurb="Named for a whispered legend -- beautiful enough to invite curiosity, dangerous only in how easily it tempts a sip." data-img="images/Aqua Tofana.jpeg" data-img-pos="70%">
+          <div class="card-img" style="background-position: center 70%; background-image: linear-gradient(140deg, rgba(0,0,0,0.35), rgba(8,4,15,0.65)), url('images/Aqua Tofana.jpeg');"></div>
+          <div class="card-body compact">
+            <h3>Aqua Tofana</h3>
           </div>
         </article>
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://i.imgur.com/c0tpcFC.png');"></div>
-          <div class="card-body">
-            <h3>Midnight Nectar</h3>
-            <p class="price">13?</p>
-            <p class="blurb">Blackberry, smoke, and a drop of nocturnal honey.</p>
+
+        <article class="card menu-card menu-tappable" data-menu-card data-title="Moonlight Embrace" data-mood="Lavender syrup, lemon, activated charcoal, blue curacao, edible flower." data-blurb="For the hour claimed only by the night -- when time softens and the darkness draws close enough to keep you." data-img="images/MoonlightEmbrace.jpeg" data-img-pos="66%">
+          <div class="card-img" style="background-position: center 66%; background-image: linear-gradient(140deg, rgba(0,0,0,0.35), rgba(8,4,15,0.65)), url('images/MoonlightEmbrace.jpeg');"></div>
+          <div class="card-body compact">
+            <h3>Moonlight Embrace</h3>
           </div>
         </article>
-        <article class="card">
-          <div class="card-img" style="background-image: url('https://i.imgur.com/c0tpcFC.png');"></div>
-          <div class="card-body">
-            <h3>Glass Serpent</h3>
-            <p class="price">14?</p>
-            <p class="blurb">Citrus bite, lavender shimmer, and cold steel clarity.</p>
+
+        <article class="card menu-card menu-tappable" data-menu-card data-title="Requiem After the Kiss" data-mood="Dark rum, blood orange liqueur, pomegranate liqueur, pomegranate juice, grenadine, black edible flower." data-blurb="The breath between desire and regret -- a deep crimson shimmer meant to be taken slowly, like lingering in a midnight cathedral." data-img="images/Requiem After the Kiss.jpeg" data-img-pos="70%">
+          <div class="card-img" style="background-position: center 70%; background-image: linear-gradient(140deg, rgba(0,0,0,0.35), rgba(8,4,15,0.65)), url('images/Requiem After the Kiss.jpeg');"></div>
+          <div class="card-body compact">
+            <h3>Requiem After the Kiss</h3>
+          </div>
+        </article>
+
+        <article class="card menu-card menu-tappable" data-menu-card data-title="Velour Vice" data-mood="Vanilla vodka, raspberry liqueur, heavy cream, rose syrup, Peychaud's bitters, cherry." data-blurb="Temptation wrapped in softness -- blush-pink silk that earns your attention sip by decadent sip until restraint melts away." data-img="images/Velours Vice.jpeg" data-img-pos="78%">
+          <div class="card-img" style="background-position: center 78%; background-image: linear-gradient(140deg, rgba(0,0,0,0.35), rgba(8,4,15,0.65)), url('images/Velours Vice.jpeg');"></div>
+          <div class="card-body compact">
+            <h3>Velour Vice</h3>
+          </div>
+        </article>
+
+        <article class="card menu-card menu-tappable gamba" data-menu-card data-title="Sealed By Fate — Gamba Drink" data-mood="Premium vodka, blue curacao, creme de violette, syrup, lemon, charcoal tincture, obsidian sugar rim." data-blurb="Void-blue and unblinking. Poured only when the decision is already made; once the glass is empty, the outcome is no longer a question." data-img="images/Gamba Drink - Sealed By Fate.jpeg" data-img-pos="74%">
+          <div class="card-img" style="background-position: center 74%; background-image: linear-gradient(140deg, rgba(0,0,0,0.35), rgba(8,4,15,0.65)), url('images/Gamba Drink - Sealed By Fate.jpeg');"></div>
+          <div class="card-body compact">
+            <h3>Sealed By Fate — Gamba Drink</h3>
           </div>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-actions">
-      <a class="text-link" href="#top">Back to top</a>
-      <a class="text-link" href="https://discord.gg/MeAdC25p9V" target="_blank" rel="noopener">Discord</a>
+  <div class="menu-modal" id="menu-modal" aria-hidden="true">
+    <div class="menu-modal-backdrop" data-menu-close></div>
+    <div class="menu-modal-panel glass">
+      <div class="menu-modal-media" data-menu-media>
+        <img data-menu-img-el alt="">
+      </div>
+      <div class="menu-modal-content">
+        <h3 data-menu-title></h3>
+        <p class="card-mood" data-menu-mood></p>
+        <p class="blurb" data-menu-blurb></p>
+      </div>
+      <button class="menu-modal-close" type="button" aria-label="Close" data-menu-close>&times;</button>
     </div>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

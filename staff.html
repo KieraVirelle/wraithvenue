@@ -31,7 +31,7 @@
   <div class="spotlight"></div>
   <div class="floor-reflection"></div>
 
-  <header class="site-header">
+  <header class="site-header header-minimal">
     <div id="scroll-progress"></div>
     <nav class="nav"></nav>
   </header>
@@ -48,44 +48,62 @@
     </section>
 
     <section class="panel glass watermark">
-      <div class="section-head">
+      <div class="section-head staff-hero">
         <p class="eyebrow">The Silken Shades</p>
         <h2>Staff</h2>
         <p class="section-lede">
           The crew keeping the night alive — bold, unforgettable, and always in motion.
         </p>
       </div>
-      <div class="staff-grid">
-        <article class="staff-card" data-bio-toggle>
-          <div class="staff-img" style="background-image: url('https://i.imgur.com/xznEYRQ.png');"></div>
-          <div class="staff-meta">
-            <h3>Kiera Virelle</h3>
-            <p>Bartender</p>
-          </div>
-          <div class="staff-bio">
-            Kiera crafts cocktails with velvet precision — equal parts charm and fire. Ask for the purple haze.
-          </div>
-        </article>
-        <article class="staff-card placeholder" data-bio-toggle>
-          <div class="staff-img placeholder-img"></div>
-          <div class="staff-meta">
-            <h3>Join the Court</h3>
-            <p>Performer</p>
-          </div>
-          <div class="staff-bio">
-            Want to dance among the Shades? Tap Discord to inquire about auditions and bookings.
-          </div>
-        </article>
+
+      <div class="staff-carousel" data-staff-carousel>
+        <button class="staff-nav prev" type="button" aria-label="Previous staff" data-staff-prev>&lsaquo;</button>
+        <div class="staff-track" data-staff-track>
+          <article class="staff-slide" data-staff data-name="Amethyst" data-role="Resident DJ" data-img="images/Amethyst - Resident DJ.png"></article>
+          <article class="staff-slide" data-staff data-name="Belial" data-role="Silken Shade" data-img="images/Belial - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="Cinder" data-role="Photographer" data-img="images/Cinder - Photographer.png"></article>
+          <article class="staff-slide" data-staff data-name="Cort" data-role="Bartender" data-img="images/Cort - Bartender.png"></article>
+          <article class="staff-slide" data-staff data-name="Dahlia" data-role="Silken Shade" data-img="images/Dahlia - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="K'lyhhias" data-role="Silken Shade" data-img="images/klyhhias.png"></article>
+          <article class="staff-slide" data-staff data-name="Kita" data-role="DJ Manager" data-img="images/Kita - DJ Manager.png"></article>
+          <article class="staff-slide" data-staff data-name="Kura" data-role="Greeter" data-img="images/Kura - Greeter.png"></article>
+          <article class="staff-slide" data-staff data-name="Lillith" data-role="Silken Shade" data-img="images/Lillith - Silken Shade.webp"></article>
+          <article class="staff-slide" data-staff data-name="Devotus Lucivarian" data-role="Silken Shade" data-img="images/Devotus_Lucivarian- Silken Shade.webp"></article>
+          <article class="staff-slide" data-staff data-name="Naga DVeil" data-role="Silken Shade" data-img="images/Naga_DVeil- Silken Shade.webp"></article>
+          <article class="staff-slide" data-staff data-name="Nova" data-role="Bartender" data-img="images/Nova - Bartender.png"></article>
+          <article class="staff-slide" data-staff data-name="Nyxi" data-role="Silken Shade" data-img="images/Nyxi - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="Onyx" data-role="Owner" data-img="images/Onyx - Owner.webp"></article>
+          <article class="staff-slide" data-staff data-name="Rukia" data-role="Owner" data-img="images/Rukia - Owner.png"></article>
+          <article class="staff-slide" data-staff data-name="Runa" data-role="Silken Shade" data-img="images/Runa - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="Selene" data-role="Silken Shade" data-img="images/Selene - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="Shiro" data-role="Silken Shade" data-img="images/Shiro - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="Taya" data-role="Silken Shade" data-img="images/Taya - Silken Shade.png"></article>
+          <article class="staff-slide" data-staff data-name="Vixxen" data-role="Resident DJ" data-img="images/Vixxen - Resident DJ.png"></article>
+          <article class="staff-slide" data-staff data-name="Xia" data-role="Photographer" data-img="images/Xia - Photographer.webp"></article>
+        </div>
+        <button class="staff-nav next" type="button" aria-label="Next staff" data-staff-next>&rsaquo;</button>
       </div>
+      <div class="staff-dots" data-staff-dots></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-actions">
-      <a class="text-link" href="#top">Back to top</a>
-      <a class="text-link" href="https://discord.gg/MeAdC25p9V" target="_blank" rel="noopener">Discord</a>
+  <div class="staff-modal" id="staff-modal" aria-hidden="true">
+    <div class="staff-modal-backdrop" data-staff-close></div>
+    <div class="staff-modal-panel glass">
+      <div class="staff-modal-img">
+        <img data-staff-modal-img alt="">
+      </div>
+      <div class="staff-modal-body">
+        <h3 data-staff-modal-name></h3>
+        <p class="card-mood" data-staff-modal-role></p>
+      </div>
+      <button class="staff-modal-close" type="button" aria-label="Close" data-staff-close>&times;</button>
     </div>
-  </footer>
+  </div>
+
+  <a class="floating-logo" href="#top" aria-label="Back to top">
+    <img src="assets/wraith-logo.png" alt="WRAITH crest">
+  </a>
 
   <script src="script.js"></script>
 </body>

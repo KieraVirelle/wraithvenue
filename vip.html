@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WRAITH VIP — tiers of access and perks for the Silken Shades.">
+  <meta name="description" content="WRAITH VIP | Velvet-night tiers, bespoke perks, and coven-only access.">
   <title>WRAITH | VIP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +33,15 @@
 
   <header class="site-header">
     <div id="scroll-progress"></div>
+    <div class="brand-lockup">
+      <div class="brand-logo">
+        <img src="assets/wraith-logo.png" alt="WRAITH crest" loading="lazy">
+      </div>
+      <div class="brand">
+        <span class="brand-mark">WRAITH</span>
+        <span class="brand-tag">Silken Shades</span>
+      </div>
+    </div>
     <nav class="nav"></nav>
   </header>
 
@@ -48,87 +57,87 @@
     </section>
 
     <section class="panel glass vip-panel" id="vip-panel">
+      <div class="vip-divider vip-divider-top"></div>
       <div class="vip-hero">
-        <div class="vip-badge">Exclusive</div>
-        <h2 class="vip-heading">VIP Tiers</h2>
-        <p class="vip-subtitle">Choose your level of access. Perks stack as you ascend.</p>
+        <div class="vip-hero-vignette"></div>
+        <div class="vip-badge">Wraith VIP</div>
+        <h2 class="vip-heading">Shadow-Locked Services</h2>
+        <p class="vip-subtitle">Choose your poison—each tier is a different flavor of indulgence.</p>
       </div>
 
       <div class="vip-tab-grid" data-vip-grid>
-        <article class="vip-card" data-vip-card>
+        <article class="vip-card" data-vip-card data-tier="nightly">
+          <div class="vip-halo"></div>
+          <div class="vip-outline"></div>
+          <div class="vip-sheen"></div>
           <div class="vip-card-top">
             <span class="vip-label">Nightly</span>
-            <h3>Nightly VIP</h3>
-            <p class="vip-duration">Access for one night</p>
+            <div class="vip-chip">
+              <span class="vip-chip-label">500k</span>
+              <span class="vip-chip-meta">per night</span>
+            </div>
           </div>
+          <p class="vip-hook">For the guest chasing one unforgettable, blurry night.</p>
           <ul class="vip-list">
-            <li>Access to VIP area</li>
-            <li>5 free shots from the bar</li>
+            <li>Can purchase 5 extra Gamba drinks.</li>
+            <li>Free drinks all night.</li>
           </ul>
         </article>
 
-        <article class="vip-card" data-vip-card>
+        <article class="vip-card" data-vip-card data-tier="monthly">
+          <div class="vip-halo"></div>
+          <div class="vip-outline"></div>
+          <div class="vip-sheen"></div>
           <div class="vip-card-top">
             <span class="vip-label">Monthly</span>
-            <h3>Monthly VIP</h3>
-            <p class="vip-duration">Monthly access</p>
+            <div class="vip-chip">
+              <span class="vip-chip-label">5 mil</span>
+              <span class="vip-chip-meta">or Discord boost</span>
+            </div>
           </div>
+          <p class="vip-hook">Your name is on the velvet list and the staff knows it.</p>
           <ul class="vip-list">
-            <li>Everything in Nightly VIP</li>
-            <li>Access to VIP area +1 guest</li>
-            <li>Discord VIP role</li>
-            <li>1 free shoot per month</li>
+            <li>Free drinks.</li>
+            <li>Can purchase 10 extra Gamba drinks.</li>
+            <li>2 free lap dances per month.</li>
+            <li>2 Gposes with a staff member of choice per month.</li>
+            <li>Access to VIP channels on Discord.</li>
           </ul>
         </article>
 
-        <article class="vip-card" data-vip-card>
-          <div class="vip-card-top">
-            <span class="vip-label">Yearly</span>
-            <h3>Yearly VIP</h3>
-            <p class="vip-duration">Yearly access</p>
-          </div>
-          <ul class="vip-list">
-            <li>Everything in Monthly VIP</li>
-            <li>Access to VIP area +3 guests</li>
-            <li>Priority waitlist</li>
-            <li>30 min free with a Court per month</li>
-            <li>10% discount on raffle tickets</li>
-          </ul>
-        </article>
-
-        <article class="vip-card featured" data-vip-card>
+        <article class="vip-card featured" data-vip-card data-tier="lifetime">
+          <div class="vip-halo"></div>
+          <div class="vip-outline"></div>
+          <div class="vip-sheen"></div>
           <div class="vip-card-top">
             <span class="vip-label elite">Lifetime</span>
-            <h3>Lifetime VIP</h3>
-            <p class="vip-duration">Lifetime access</p>
+            <div class="vip-chip vip-chip-elite">
+              <span class="vip-chip-label">15 mil</span>
+              <span class="vip-chip-meta">once</span>
+            </div>
           </div>
+          <p class="vip-hook">The coven knows your face. The Shades move when you do.</p>
           <ul class="vip-list">
-            <li>Everything in Yearly VIP</li>
-            <li>Access to VIP area +5 guests</li>
-            <li>Free drinks from the bar</li>
-            <li>Photobooth priority</li>
-            <li>Name listed on site as contributor</li>
+            <li>All monthly perks.</li>
+            <li>Can purchase 15 extra Gamba drinks.</li>
+            <li>Choose one of the Shades as arm candy during your stay.</li>
+            <li>Pre-book your court of choice before doors open.</li>
+            <li>Friends add for fast teleport to the venue.</li>
+            <li>5 free lap dances per month.</li>
+            <li>4 Gposes with a staff member of choice per month.</li>
           </ul>
-          <div class="vip-ribbon">Most coveted</div>
         </article>
       </div>
+      <div class="vip-divider vip-divider-bottom"></div>
     </section>
   </main>
 
   <div class="vip-modal" id="vip-modal" aria-hidden="true">
     <div class="vip-modal-backdrop" data-vip-close></div>
     <div class="vip-modal-panel glass">
-      <button class="vip-modal-close" data-vip-close aria-label="Close VIP details">×</button>
       <div class="vip-modal-content" data-vip-modal-content></div>
     </div>
   </div>
-
-  <footer class="site-footer">
-    <div class="footer-actions">
-      <a class="text-link" href="#top">Back to top</a>
-      <a class="text-link" href="https://discord.gg/MeAdC25p9V" target="_blank" rel="noopener">Discord</a>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>
